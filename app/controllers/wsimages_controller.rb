@@ -3,16 +3,12 @@ class WsimagesController < ApplicationController
     # show user images case
     soap_action "userImages",
                 :args   => { :username => :string},
-                :return => :boolean
+                :return => :string
     def userImages
-        @API_URL = 'http://www.splashbase.co/api/v1/images/latest'
+        @API_URL = 'http://192.168.99.113:8080/images/' + params[:username]
         response = HTTParty.get(@API_URL)
         validate = true
-        if response.nil?:
-            validate = false
-        end
-        render :soap => validate    
-
+        render :soap => response    
     end 
     
 end
