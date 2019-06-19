@@ -1,0 +1,2 @@
+module ShowImageHelper
+end
