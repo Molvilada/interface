@@ -1,0 +1,2 @@
+module WschatsHelper
+end
