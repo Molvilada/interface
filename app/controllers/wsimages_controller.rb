@@ -13,13 +13,13 @@ class WsimagesController < ApplicationController
     
 end
 
-class Images < WashOut::Type
-    map :universe => {
-          :base_64 => :string,
-    }
-end
+# class Images < WashOut::Type
+#     map :universe => {
+#           :base_64 => :string,
+#     }
+# end
   
-class ImagesContainer < WashOut::Type
-    type_name 'images'
-    map :images => Images
-end
+# class ImagesContainer < WashOut::Type
+#     type_name 'images'
+#     map :images => Images
+# end

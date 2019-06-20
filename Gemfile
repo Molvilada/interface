@@ -62,3 +62,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'wash_out'
 gem 'httparty'
+gem 'savon', '~> 2.0'
